@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+  bind9:
+    build: /home/henrique/BIND9/bind
+    tty: true
+    # container_name: bind1
+    # ports:
+    # - "53:53/udp"
+    # - "53:53/tcp"
+    volumes:
+      - ../bind/config/:/etc/bind/
+
+    
